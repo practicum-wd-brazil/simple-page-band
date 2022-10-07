@@ -9,6 +9,7 @@
     * {
       margin: 0;
       padding: 0;
+      font-family: Arial;
     }
 
     .hero-container {
@@ -23,14 +24,61 @@
     }
 
     .hero-container__title {
+      font-size: 36px;
       color: white;
       text-align: center;
+      margin-bottom: 17px;
+      font-weight: 400;
     }
 
     .hero-container__text {
+      font-size: 18px;
       color: white;
       text-align: center;
       margin-bottom: 40px;
+    }
+
+    .band__title {
+      font-weight: 400;
+      text-align: center;
+      letter-spacing: 5px;
+      margin-top: 74px;
+    }
+
+    .band__subtitle{
+      font-weight: 400;
+      text-align: center;
+      font-size: 13px;
+      font-style: italic;
+      color: gray;
+      margin: 17px 0;
+    }
+
+    .band__text {
+      width: 80%;
+      max-width: 768px;
+      margin: 0 auto;
+      text-align: justify;
+    }
+    .member{
+      width:256px;
+    }
+
+    .band__members{
+      width: 80%;
+      max-width: 768px;
+      margin: 62px auto;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .member__name {
+      text-align: center;
+      margin-bottom: 15px;
+    }
+
+    .member__image {
+      width: 154px;
     }
 
   </style>
@@ -41,25 +89,24 @@
       <h2 class="hero-container__title">Los Angeles</h2>
       <p class="hero-container__text">We had the best time playing at Venice Beach!</p>
     </section>
-    <section class="container">
-      <h1 class="container__h1">THE BAND</h1>  
-      <h2 class="container__h2">We love music</h2> 
-      <p class="container__text">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      https://www.w3schools.com/w3images/bandmember.jpg
-      <div class="container__cards">
-        <figure class="container__cards__fig">
-          <figcaption class="container__cards__fig__figcaption ">Name</figcaption>
-          <img class="" src="https://www.w3schools.com/w3images/bandmember.jpg" alt="membros da banda">
+    <section class="band">
+      <h1 class="band__title">THE BAND</h1>  
+      <h2 class="band__subtitle">We love music</h2> 
+      <p class="band__text">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <div class="band__members">
+        <figure class="member">
+          <figcaption class="member__name">Name</figcaption>
+          <img class="member__image" src="https://www.w3schools.com/w3images/bandmember.jpg" alt="membros da banda">
         </figure>
   
-        <figure>
-          <figcaption>Name</figcaption>
-          <img src="https://www.w3schools.com/w3images/bandmember.jpg" alt="membros da banda">
+        <figure class="member"> 
+          <figcaption class="member__name">Name</figcaption>
+          <img class="member__image" src="https://www.w3schools.com/w3images/bandmember.jpg" alt="membros da banda">
         </figure>
   
-        <figure>
-          <figcaption>Name</figcaption>
-          <img src="https://www.w3schools.com/w3images/bandmember.jpg" alt="membros da banda">
+        <figure class="member">
+          <figcaption class="member__name">Name</figcaption>
+          <img class="member__image" src="https://www.w3schools.com/w3images/bandmember.jpg" alt="membros da banda">
         </figure>
       </div>
     </section>
