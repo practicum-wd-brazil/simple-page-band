@@ -1,0 +1,236 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial;
+}
+
+/* .navbar{
+    display: flex;
+    justify-content: space-between;
+    height: 5%;
+    position: fixed;
+    background-color: black;
+    color: white;
+    width: 100%;
+    text-transform: uppercase;
+    list-style-type: none;
+    font-size: 16px;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+.navbar__div-left{
+    display: flex;
+    align-self: center;
+}
+.navbar__div-right{
+    align-self: center;
+}
+.to-left{
+    padding-left: 10%;
+}
+.navbar__section{
+    display: flex;
+    background-image: url(https://www.w3schools.com/w3images/chicago.jpg);
+    height: 100vh;
+    background-size: cover;
+    color: white;
+    align-items: center;
+    flex-direction: column;
+    justify-content:end;
+}
+.navbar__section__title{
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: 400;
+    padding-bottom: 1%;
+}
+.navbar__section__text{
+    font-weight: bolder;
+    font-size: 16px;
+    padding-bottom: 2%;
+} */
+
+.hero-container {
+  background-image: url(https://www.w3schools.com/w3images/ny.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.hero-container__title {
+  font-size: 36px;
+  color: white;
+  text-align: center;
+  margin-bottom: 17px;
+  font-weight: 400;
+}
+
+.hero-container__text {
+  font-size: 18px;
+  color: white;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.title {
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 5px;
+  margin-top: 74px;
+  font-size: 30px;
+}
+
+.title_theme_dark{
+  color: white;
+}
+
+.subtitle{
+  font-weight: 400;
+  text-align: center;
+  font-size: 13px;
+  font-style: italic;
+  color: gray;
+  margin: 17px 0;
+}
+
+.subtitle_theme_dark{
+    color: white;
+    backdrop-filter: contrast(7.37);
+    font-size: 15px;
+}
+
+.container {
+  width: 80%;
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+.band__text {
+  text-align: justify;
+}
+
+.band__members{
+  margin: 62px auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.member__name {
+  font-size: 14px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.member__image {
+  width: 154px;
+  height: 154px;
+  margin: 0 auto;
+}
+
+.tour{
+  width: 100%;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+}
+
+.calendar{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.available{
+    height: 40px;
+    display: flex;
+    border: 1px solid #757575;
+    background: white;
+    justify-content: space-between;
+}
+
+.available__text{
+    color: #d3d3d3;
+    padding: 8px 16px;
+    font-size: 15px;
+}
+
+.available__sold{
+    justify-content: flex-start;
+}
+
+.sold{
+    margin: auto;
+    background-color: #f44336;
+    width: 70px;
+}
+
+.sold__text{
+    font-size: 15px;
+    color:white;
+    z-index: 1;
+}
+
+.circle__date{
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    background-color: black;
+    z-index: 0;
+}
+
+.cicle__date__text{
+    color: white;
+    font-size: 15px;
+}
+
+.cards{
+  display: flex;
+  margin-top: 25px;
+  gap: 8px;
+}
+
+.card {
+  background-color: white;
+}
+
+.card__image {
+  width: 100%;
+}
+
+.card__description {
+  padding: 18px;
+}
+.card__title {
+  margin-bottom: 18px;
+}
+.card__date {
+  color: gray;
+  margin-bottom: 18px; 
+}
+.card__text {
+  font-size: 14px;
+}
+
+.card__link {
+  display: inline-block;
+  margin-top: 18px;
+  background-color: black;
+  color: white;
+  font-size: 14px;
+  padding: 10px 15px;
+  text-decoration: none;
+}
+
+.card__link:hover {
+  background-color: #ccc;
+  color: black;
+}
+
+
+
+
+
