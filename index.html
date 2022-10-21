@@ -8,24 +8,36 @@
   <link rel="stylesheet" href="./index.css">
 </head>
 <body>
-  <!-- <navbar class="navbar">
-    <div class="navbar__div navbar__div-left">
-        <li class="navbar__div__text"><a>home</a></li>
-        <li class="navbar__div__text to-left"><a>band</a></li>
-        <li class="navbar__div__text to-left"><a>tour</a></li>
-        <li class="navbar__div__text to-left"><a>contact</a></li>
-        <li class="navbar__div__text to-left"><a>more<span class="material-symbols-outlined">keyboard_arrow_down</span></a></li>
-    </div>
-    <div class="navbar__div navbar__div-right">
-        <li span class="material-symbols-outlined right">search</span></li>
-    </div>
-  </navbar> -->
+  <header>
+    <nav class="navbar">
+      <ul class="navbar__list">
+        <li class="navbar__item">
+          <a href="#home" class="navbar__link">Home</a>
+        </li>
+        <li class="navbar__item">
+          <a href="#band" class="navbar__link">Band</a>
+        </li>
+        <li class="navbar__item">
+          <a href="#tour" class="navbar__link">Tour</a>
+        </li>
+        <li class="navbar__item">
+          <a href="#contact" class="navbar__link">Contact</a>
+        </li>
+        <li class="navbar__item">
+          More
+        </li>
+      </ul>
+      <button class="search">
+        <img src="images/search.svg" alt="Search" class="search__icon">
+      </button>
+    </nav>
+  </header>
   <main>
-    <section class="hero-container">
+    <section class="hero-container" id="home">
       <h2 class="hero-container__title">Los Angeles</h2>
       <p class="hero-container__text">We had the best time playing at Venice Beach!</p>
     </section>
-    <section class="band">
+    <section class="band" id="band">
       <div class="container">
         <h1 class="title">THE BAND</h1>  
         <h2 class="subtitle">We love music</h2> 
@@ -48,28 +60,28 @@
         </div>
       </div>
     </section>
-    <section class="tour">
+    <section class="tour" id="tour">
       <div class="container">
         <h2 class="title title_theme_dark">TOUR DATES</h2>
         <h3 class="subtitle subtitle_theme_dark">Remember to book yours tickets!</h3>
   
         <div class="calendar">
-          <div class="available available__sold">
-            <p class="available__text">September</p>
-            <div class="sold"><p class="sold__text">Sold Out</p></div>
+          <div class="available available_sold">
+            <p class="available_text">September</p>
+            <span class="sold sold_text">Sold Out</span>
           </div>
-          <div class="available available__sold">
-            <p class="available__text">October</p>
-            <div class="sold"><p class="sold__text">Sold Out</p></div>
+          <div class="available available_sold">
+            <p class="available_text">October</p>
+            <span class="sold sold_text">Sold Out</span>
           </div>        
-          <div class="available">
-            <p class="available__text">November</p> <!--já volto-->
-            <div class="circle__date"><p class="circle__date__text">3</p></div>
+          <div class="available available_circle">
+            <p class="available_text">November</p> <!--já volto-->
+            <div class="circle_date "><p class="circle_date_text">3</p></div>
           </div>
         </div>
        
         <div class="cards">
-          <div class="card">
+          <article class="card">
             <div class="card__image-container">
               <img class="card__image" src="https://www.w3schools.com/w3images/newyork.jpg" alt="New York">
             </div>
@@ -77,10 +89,10 @@
               <h4 class="card__title">New York</h4>
               <p class="card__date">Fri 27 Nov 2016</p>
               <p class="card__text">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-              <a href="#" class="card__link">Buy Tickets</a>
+              <a href="#" class="button">Buy Tickets</a>
             </div>
-          </div>
-          <div class="card">
+          </article>
+          <article class="card">
             <div class="card__image-container">
               <img class="card__image" src="https://www.w3schools.com/w3images/paris.jpg" alt="Paris">
             </div>
@@ -88,10 +100,10 @@
               <h4 class="card__title">Paris</h4>
               <p class="card__date">Sat 28 Nov 2016</p>
               <p class="card__text">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-              <a href="#" class="card__link">Buy Tickets</a>
+              <a href="#" class="button">Buy Tickets</a>
             </div>
-          </div>
-          <div class="card">
+          </article>
+          <article class="card">
             <div class="card__image-container">
               <img class="card__image" src="https://www.w3schools.com/w3images/sanfran.jpg" alt="San Francisco">
             </div>
@@ -99,13 +111,46 @@
               <h4 class="card__title">New York</h4>
               <p class="card__date">Fri 27 Nov 2016</p>
               <p class="card__text">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-              <a href="#" class="card__link">Buy Tickets</a>
+              <a href="#" class="button">Buy Tickets</a>
             </div>
-          </div>
+          </article>
         </div>
       </div>
     </section>
-
+    <section id="contact">
+      <div class="container">
+        <h1 class="title">Contact</h1>
+        <h2 class="subtitle">Fan? Drop a note!</h2>
+        <div class="contact">
+          <ul>
+            <li class="contact__item">
+              <img class="contact__icon" src="./images/location.svg" alt="Location">
+              <span>
+                Chicago, US
+              </span>
+            </li>
+            <li class="contact__item">
+              <img class="contact__icon" src="/images/phone.svg" alt="Phone">
+              Phone: +00 151515
+            </li>
+            <li class="contact__item">
+              <img class="contact__icon" src="/images/email.svg" alt="Email">
+              Email: mail@mail.com
+            </li>
+          </ul>
+          <form class="contact__form">
+            <div class="contact__inputs">
+              <input class="contact__input" placeholder="Name" />
+              <input class="contact__input" placeholder="Email" />
+            </div>
+            <textarea class="contact__input" placeholder="Message"></textarea>
+            <div class="contact__button">
+              <button class="button button_form">Send</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
   </main>
 </body>
 </html>

@@ -4,50 +4,62 @@
   font-family: Arial;
 }
 
-/* .navbar{
-    display: flex;
-    justify-content: space-between;
-    height: 5%;
-    position: fixed;
-    background-color: black;
-    color: white;
-    width: 100%;
-    text-transform: uppercase;
-    list-style-type: none;
-    font-size: 16px;
-    padding-left: 1%;
-    padding-right: 1%;
+.navbar {
+  position: fixed;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  z-index: 9999;
 }
-.navbar__div-left{
-    display: flex;
-    align-self: center;
+
+.navbar__list {
+  display: flex;
+  width: 30%;
+  /* justify-content: space-around; */
+  align-items: center;
+  list-style: none;
 }
-.navbar__div-right{
-    align-self: center;
+
+.navbar__item {
+  text-transform: uppercase;
+  font-size: 14px;
+  padding: 15px;
 }
-.to-left{
-    padding-left: 10%;
+
+.navbar__item:hover {
+  background-color: #ccc;
 }
-.navbar__section{
-    display: flex;
-    background-image: url(https://www.w3schools.com/w3images/chicago.jpg);
-    height: 100vh;
-    background-size: cover;
-    color: white;
-    align-items: center;
-    flex-direction: column;
-    justify-content:end;
+
+.navbar__item:hover .navbar__link {
+  color: black;
 }
-.navbar__section__title{
-    font-family: "Segoe UI",Arial,sans-serif;
-    font-weight: 400;
-    padding-bottom: 1%;
+
+.navbar__link {
+  text-decoration: none;
+  color: white;
 }
-.navbar__section__text{
-    font-weight: bolder;
-    font-size: 16px;
-    padding-bottom: 2%;
-} */
+
+.navbar__link:visited {
+  color:white;
+}
+
+.search {
+  background-color: transparent;
+  border: none;
+  padding: 12px 20px;
+}
+
+.search:hover {
+  background-color: #f44336;
+}
+
+.search__icon {
+  color: white;
+  height: 16px;
+  width: 16px;
+}
 
 .hero-container {
   background-image: url(https://www.w3schools.com/w3images/ny.jpg);
@@ -79,8 +91,8 @@
   font-weight: 400;
   text-align: center;
   letter-spacing: 5px;
-  margin-top: 74px;
   font-size: 30px;
+  text-transform: uppercase;
 }
 
 .title_theme_dark{
@@ -106,6 +118,7 @@
   width: 80%;
   max-width: 768px;
   margin: 0 auto;
+  padding: 74px 0 112px;
 }
 
 .band__text {
@@ -113,7 +126,7 @@
 }
 
 .band__members{
-  margin: 62px auto;
+  margin: 62px auto 0;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -136,56 +149,69 @@
   background-color: black;
   display: flex;
   flex-direction: column;
+  padding-bottom: 112px;
 }
 
 .calendar{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 .available{
-    height: 40px;
-    display: flex;
-    border: 1px solid #757575;
-    background: white;
-    justify-content: space-between;
+  height: 40px;
+  display:flex;
+  border-bottom: 1px solid #ddd;
+  background: white;
+  justify-content: space-between;
 }
 
-.available__text{
-    color: #d3d3d3;
-    padding: 8px 16px;
-    font-size: 15px;
+.available_text{
+  color: #d3d3d3;
+  padding: 8px 16px;
+  font-size: 15px;
 }
 
-.available__sold{
-    justify-content: flex-start;
+.available_sold{
+  justify-content: flex-start;
 }
 
 .sold{
-    margin: auto;
-    background-color: #f44336;
-    width: 70px;
+  display: flex;
+  padding: 3px 0 3px 0;
+  background-color: #f44336;
+  width: 70px;
+  margin-bottom: 10px;
+  align-self: center;
 }
 
-.sold__text{
-    font-size: 15px;
-    color:white;
-    z-index: 1;
+.sold_text{
+  font-size: 15px;
+  color:white;
+  z-index: 1;
+  text-align: center;
+  justify-content: center;
+  margin: auto 0;
 }
 
-.circle__date{
-    border-radius: 50%;
-    width: 25px;
-    height: 25px;
-    background-color: black;
-    z-index: 0;
+.circle_date{
+  display: flex;
+  text-align: center;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  background-color: black;
+  z-index: 0;
+  margin: auto 23px;
 }
 
-.cicle__date__text{
-    color: white;
-    font-size: 15px;
+.circle_date_text{
+  color: white;
+  font-size: 15px;
+  z-index: 1;
+  margin: auto;
 }
+
 
 .cards{
   display: flex;
@@ -213,24 +239,66 @@
 }
 .card__text {
   font-size: 14px;
+  margin-bottom: 18px;
 }
 
-.card__link {
+.button {
   display: inline-block;
-  margin-top: 18px;
   background-color: black;
   color: white;
   font-size: 14px;
   padding: 10px 15px;
   text-decoration: none;
+  border: none;
 }
 
-.card__link:hover {
+.button_form {
+  text-transform: uppercase;
+}
+
+.button:hover {
   background-color: #ccc;
   color: black;
 }
 
+.contact {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
 
+.contact__item {
+  list-style: none;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 4px;
+}
 
+.contact__icon {
+  height: 16px;
+  width: 16px;
+}
+
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.contact__inputs {
+  display: flex;
+  gap: 16px;
+}
+
+.contact__input {
+  padding: 8px;
+  border: 1px solid #CCC;
+  resize: vertical;
+}
+
+.contact__button {
+  text-align: right;
+}
 
 
